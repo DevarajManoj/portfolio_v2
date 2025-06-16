@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "tailwind": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  },
+  "name": "project-portfolio",
+  "version": "1.0.0",
+  "main": "matter.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

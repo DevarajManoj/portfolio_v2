@@ -1,0 +1,28 @@
+/* Custom Section Backgrounds */
+.hero-section {
+  background-image: url('IMG-20190101-WA0078.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-size:height: 400px;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+/* Decorative Border */
+.project-card {
+  border: 2px solid #e2e8f0; /* Light blue border */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Circular Profile Image */
+.profile-image {
+  width: 150px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #2563eb; /* Blue border */
+  margin: 0 auto 1rem;
+  display: block;
+}
