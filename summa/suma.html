@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devaraj's Portfolio</title>
+  <link href="custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<script>function showSkills() {
+  const skills = document.getElementById('skills');
+  if (skills.style.display === "none") {
+    skills.style.display = "block";
+  } else {
+    skills.style.display = "none";
+  }
+}
+</script>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <img src="img21.png" alt="Devaraj's Photo" class="profile-image">
+    <p><iframe style="width: 100%; height: 100px; overflow: hidden;" src="https://wallpapercat.com/iron-man-wallpapers" width="100" height="100" scrolling="no">Iframes not supported</iframe></p>
+    <button type="button" onclick="window.print()">click me you can print page</button>
+        <P id="js">Hello bhai</P>
+        <button type="button" onclick='document.getElementById("js").innerHTML = "goodwork"'>click here</button>
+        <button type="menu" onclick=' document.getElementById("js").innerText = "nicedude";'>click 2</button>
+        <button type="reset" onclick='fss()'>submit</button>
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Devaraj's Portfolio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-blue-400">About Me</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex items-center justify-center h-screen bg-gray-300">
+    <section class="hero-section flex items-center justify-center h-screen">
+        <div class="text-center">
+      <h1 class="text-5xl font-bold mb-4">Hello, I'm Devaraj!</h1>
+      <p class="text-lg">A Full-Stack Developer specializing in Java, SQL, and JavaScript.</p>
+      <a href="#projects" class="mt-4 inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="container mx-auto py-16 px-4">
+    <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      I'm a Computer Science Engineer passionate about building innovative solutions. I've completed a full-stack development course at TAP Academy and worked on projects involving Java, HTML/CSS, and JavaScript.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16 px-4 bg-gray-200">
+    <h2 class="text-4xl font-bold mb-6 text-center">My Projects</h2>
+    <div class="project-card bg-white rounded-lg shadow-lg p-6 mb-6">
+
+    <!-- Project 1: Wildfire Detection -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+      <h3 class="text-2xl font-bold mb-2">Wildfire Detection using Deep Learning</h3>
+      <p class="text-gray-700 mb-4">
+        This project involves detecting wildfires by comparing real-time images with AI models and alerting forest officials.
+      </p>
+    </div>
+
+    <!-- Project 2: AR/VR Virtual Environment -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <h3 class="text-2xl font-bold mb-2">AR/VR Virtual Environment</h3>
+      <p class="text-gray-700">
+        Designed immersive virtual environments using Unity and Blender, creating game-like experiences with natural assets.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-16 px-4">
+    <h2 class="text-4xl font-bold mb-6 text-center">Contact Me</h2>
+    <p class="text-lg text-center">
+      Email: <a href="mailto:devarajmanoj08@gmail.com" class="text-blue-600 hover:underline">devarajmanoj08@gmail.com</a>
+    </p>
+    <p class="text-lg text-center">
+      Phone: <a href="tel:+917418334108" class="text-blue-600 hover:underline">7418334108</a>
+    </p>
+
+
+    <h2>Check Out My Portfolio</h2>
+    <div class="arrow">←</div> <!-- Left-pointing arrow -->
+    <div class="portfolio">My Portfolio</div>
+  </section>
+  <div class="relative flex items-center space-x-3 mb-20">
+    <button class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
+    hover:scale-110 ease-in-out duration-100 group">
+        About Me
+    </button>
+    <span class="text-3xl text-red-500 transition-transform transform group-hover:translate-x-2 ease-in-out duration-200">→</span>
+</div>
+<div class="profile-container">
+  <svg width="320" height="320" class="circular-text">
+    <defs>
+      <path id="circlePath"
+            d="M 160, 160
+               m -140, 0
+               a 140,140 0 1,1 280,0
+               a 140,140 0 1,1 -280,0"/>
+    </defs>
+    <text font-size="24" font-family="Arial" fill="#fff">
+      <textPath xlink:href="#circlePath" startOffset="0">
+        DEVARAJ • sOFTWARE ENGINEER •
+      </textPath>
+    </text>
+  </svg>
+  <div class="circular-image">
+    <img src="my photo.jpg" alt="Profile Photo">
+  </div>
+</div>
+
+<button onclick="showSkills()">Show My Skills</button>
+
+<div id="skills" style="display: none; margin-top: 20px;">
+  <h2>Key Skills</h2>
+
+  <div class="skill">
+    <p>HTML / CSS</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 80%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>Java</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 75%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>SQL</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 85%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>Advance Java</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 70%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>C Language</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 50%;"></div>
+    </div>
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Scroll</title>
+ 
+
+
+
+</div>
+<!-- Paste inside <body> -->
+<section class="bg-[#111827] text-white py-10 px-5 md:px-20 font-['Nunito']">
+  <h2 class="text-3xl font-bold text-blue-500 border-b border-gray-700 pb-2 mb-6">EDUCATION</h2>
+
+  <div class="space-y-10">
+
+    <!-- Full Stack Course -->
+    <div class="flex justify-between items-start flex-wrap">
+      <div>
+        <h3 class="text-xl font-semibold">Full-stack Development Course</h3>
+        <ul class="list-disc list-inside text-gray-300 mt-1">
+          <li>TAP Academy - Bengaluru</li>
+        </ul>
+      </div>
+      <p class="text-blue-400 mt-1 md:mt-0">6 months</p>
+    </div>
+
+    <!-- College -->
+    <div class="flex justify-between items-start flex-wrap">
+      <div>
+        <h3 class="text-xl font-semibold">Shanmuganathan Engineering College</h3>
+        <ul class="list-disc list-inside text-gray-300 mt-1">
+          <li>Bachelor of Computer Science and Engineering</li>
+          <li>CGPA - 7.6</li>
+        </ul>
+      </div>
+      <p class="text-blue-400 mt-1 md:mt-0">2020 - 2024</p>
+    </div>
+
+    <!-- School -->
+    <div class="flex justify-between items-start flex-wrap">
+      <div>
+        <h3 class="text-xl font-semibold">St. Mary’s Hr. Sec. School</h3>
+        <ul class="list-disc list-inside text-gray-300 mt-1">
+          <li>Secondary School Board</li>
+          <li>Percentage - 86%</li>
+        </ul>
+      </div>
+      <p class="text-blue-400 mt-1 md:mt-0">2018 - 2020</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <h2>Continue Watching</h2>
+<div class="scroll-container">
+  <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/8dcb75184d69de42a8c1bbbafb4336738f4b62b2384fa28aaf3992cc6792879b.__SX212.5__SY120__QL60__._TTW_.jpg" alt="Thumb 1"></div>
+  <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/f190176d200da9f627a43a170f4f8c9a9ffd8fb9dd98b645ffdea03ffd3928a7.__SX212.5__SY120__QL60__._TTW_.jpg" alt="Thumb 2"></div>
+  <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/67853aee4d9a637ad80e80eaaabbfcda2a2b97f94a8b1472c99c842e4d31f50c.__SX212.5__SY120__QL60__._TTW_.jpg" alt="Thumb 3"></div>
+  <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/7f80d52741de8c288db96b5d3c9006c3e852a507b5c8050e333528f41f435209.__SX212.5__SY120__QL60__._TTW_.jpg" alt="Thumb 4"></div>
+  <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/e3149bbb29ceccfa3efa54c470f21614178537eabed99bfe0b49db3fdcfad668.__SX212.5__SY120__QL60__._TTW_.jpg" alt="Thumb 5"></div>
+</div>
+<p>----------------------------------------------------</p>
+  <div class="collections-container">
+    <h2>Explore curated lists of top restaurants, cafes, pubs, and bars in Agra, based on trends</h2>
+
+    <div class="scroll-wrapper">
+      <button class="arrow left" onclick="scrollLeft()">&#10094;</button>
+
+      <div class="card-container" id="cardContainer">
+        <div class="card">
+          <img src="https://i.imgur.com/jV7mN8v.jpg" alt="Mughlai">
+          <div class="card-info">
+            <h3>Best Mughlai Places</h3>
+            <p>6 Places</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.imgur.com/kZXbS2U.jpg" alt="Breakfast">
+          <div class="card-info">
+            <h3>Blissful Breakfast Places</h3>
+            <p>13 Places</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.imgur.com/41sytI7.jpg" alt="Rooftop">
+          <div class="card-info">
+            <h3>Serene Rooftop Places</h3>
+            <p>12 Places</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.imgur.com/I6XhXzh.jpg" alt="Cafes">
+          <div class="card-info">
+            <h3>Great Cafes</h3>
+            <p>16 Places</p>
+          </div>
+        </div>
+        <!-- Add more cards if needed -->
+      </div>
+<button class="arrow right" onclick="scrollRight()">&#10095;</button>
+      
+    </div>
+  </div>
+
+ 
+
+
+  <div class="slider-container">
+  <button class="arrow left" onclick="scrollLeft()">&#8592;</button>
+  
+  <div class="image-slider" id="slider">
+    <img src="imges/img_1.jpg" alt="Item 1" />
+    <img src="imges/img_2.jpg" alt="Item 2" />
+    <img src="imges/img_3.jpg" alt="Item 3" />
+    <img src="imges/img_4.jpg" alt="Item 4" />
+    <img src="imges/img_5.jpg" alt="Item 5" />
+    <img src="imges/img_6.jpg" alt="Item 6" />
+    <img src="imges/img_7.jpg" alt="Item 7" />
+    <img src="imges/img_8.jpg" alt="Item 8" />
+    <img src="imges/img_9.jpg" alt="Item 9" />
+    <img src="imges/img_10.jpg" alt="Item 10" />
+    <img src="imges/img_11.jpg" alt="Item 11" />
+    <img src="imges/img_12.jpg" alt="Item 12" />
+
+    <!-- Add more images here -->
+  </div>
+  
+  <button class="arrow right" onclick="scrollRight()">&#8594;</button>
+</div>
+  <!-- next time-->
+<div class="image-slider" id="slider">
+  <div class="image-box" onclick="showDetails(this)">
+    <img src="imges/img_4.jpg" alt="Image 1">
+    <div class="details-overlay">
+      <p><strong>Product Name:</strong> Pizza Margherita</p>
+      <p><strong>Price:</strong> ₹199</p>
+    </div>
+  </div>
+
+  <div class="image-box" onclick="showDetails(this)">
+    <img src="imges/img_3.jpg" alt="Image 2">
+    <div class="details-overlay">
+      <p><strong>Product Name:</strong> Veg Combo</p>
+      <p><strong>Price:</strong> ₹299</p>
+    </div>
+  </div>
+  <div class="image-box" onclick="showDetails(this)">
+    <img src="imges/img_3.jpg" alt="Image 2">
+    <div class="details-overlay">
+      <p><strong>Product Name:</strong> Veg Combo</p>
+      <p><strong>Price:</strong> ₹299</p>
+    </div>
+  </div>
+
+  <div class="image-box" onclick="showDetails(this)">
+    <img src="imges/img_3.jpg" alt="Image 2">
+    <div class="details-overlay">
+      <p><strong>Product Name:</strong> Veg Combo</p>
+      <p><strong>Price:</strong> ₹299</p>
+    </div>
+  </div>
+
+
+  <!-- Add more boxes -->
+</div>
+<div class="flex">
+  <!-- Left Box -->
+  <div class="w-[400px] bg-blue-600 text-white p-4">
+    <h2>My Box</h2>
+    <p>This is a box with 400px width</p>
+  </div>
+
+  <!-- Right Paragraph -->
+  <div class="ml-4 text-white">
+    <p>This is a paragraph next to the box. You can add more content here.</p>
+  </div>
+</div>
+
+<!--<div class="part-2">
+      <section class="certificate-section">
+        <h2
+        id="certificates"class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]"
+     >
+       Certificates
+     </h2>
+    
+        <div class="certifiborder mt-6">
+          <div class="certificate-gallery grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <!-- Certificate 1 -->
+            <div class="imageofcertificate">
+              <img src="images/tap certification.png" alt="Full-Stack Development Certificate - TAP Academy">
+              <div class="description">
+                <span>
+                  Full-Stack Development Course<br />
+                  Issued by TAP Academy, Bengaluru, in 2024.
+                </span>
+              </div>
+            </div>
+    
+            <!-- Certificate 2 -->
+            <div class="imageofcertificate">
+              <img src="images/Front End Development (Express JS and Redux).jpg" alt="Front-End Development Workshop Certificate - Pantech e-Learning">
+              <div class="description">
+                <span>
+                  Front-End Development Workshop<br />
+                  Express.js and Redux by Pantech e-Learning, 2024.
+                </span>
+              </div>
+            </div>
+    
+            <!-- Certificate 3 -->
+            <div class="imageofcertificate">
+              <img src="images/Java Annotations and Spring Boot.jpg" alt="Java Annotations and Spring Boot Certificate - Marcello Technology">
+              <div class="description">
+                <span>
+                  Java Annotations and Spring Boot<br />
+                  Conducted by Marcello Technology, 2024.
+                </span>
+              </div>
+            </div>
+    
+            <!-- Certificate 4 -->
+            <div class="imageofcertificate">
+              <img src="images/Android Applicaton Development.jpg" alt="Android Application Development Certificate - Pantech e-Learning">
+              <div class="description">
+                <span>
+                  Android Application Development<br />
+                  Conducted by Pantech e-Learning, 2024.
+                </span>
+              </div>
+            </div>
+    
+            <!-- Certificate 5-->
+            <div class="imageofcertificate">
+              <img src="images/HTML and CSS  Workshop.jpg" alt="HTML and CSS Workshop Certificate - Pantech e-Learning">
+              <div class="description">
+                <span>
+                  HTML and CSS Workshop<br />
+                  Conducted by Pantech e-Learning, 2024.
+                </span>
+              </div>
+            </div>
+    
+            <!-- Certificate 6 -->
+            <div class="imageofcertificate">
+              <img src="images/Employability Skills Development Training Programme.jpg" alt="Employability Skills Development Training Program Certificate - TITAN LeaP via Pantech e-Learning">
+              <div class="description">
+                <span>
+                  Employability Skills Development Training Program<br />
+                  Conducted by TITAN LeaP via Pantech e-Learning, 2024.
+                </span>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    </div>
+  css
+/* Gallery Grid */
+.certificate-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Change to 3 items per row */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center items horizontally */
+  padding: 10px;
+}
+
+/* Individual Certificate Item */
+.certificate-item {
+  display: flex;
+  flex-direction: column; /* Ensure description is below the image */
+  align-items: center; /* Center align image and text */
+  background: #222; /* Background color for the item */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners for the box */
+  border: 2px solid #444; /* Subtle border for the box */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* White shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.certificate-item:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3); /* Enhance shadow on hover */
+}
+
+/* Image Styling */
+.certificate-item img {
+  position: relative;
+  width: 200px; /* Set image size */
+  height: 200px; /* Make the image square */
+  object-fit: cover; /* Ensure image fills the container */
+  border-radius: 10px; /* Rounded corners for the image */
+  border: 2px solid #fff; /* White border for the image */
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Subtle shadow for the image */
+  margin-bottom: 20px; /* Space between image and description */
+}
+
+/* Description Styling */
+.certificate-item .description {
+  color: red; /* Red text for the description */
+  font-family: "Times New Roman", serif; /* Times New Roman font */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center; /* Center align text */
+  line-height: 1.5; /* Improve readability */
+  position: absolute;
+}
+
+div > img {
+  border-radius: 5%;
+}
+.description {
+  color: rgb(17, 16, 16);
+  background: radial-gradient(
+    circle,
+    rgba(64, 225, 234, 1) 16%,
+    rgba(24, 46, 237, 1) 88%
+  );
+  font-weight: 700;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+  object-fit: cover;
+}
+span {
+  display: none;
+}
+div:hover span {
+  display: inline-block;
+  color: rgb(17, 16, 16);
+  background: radial-gradient(
+    circle,
+    rgba(64, 225, 234, 1) 16%,
+    rgba(24, 46, 237, 1) 88%
+  );
+  font-weight: 700;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+}-->
+
+
+</body>
+</html>
